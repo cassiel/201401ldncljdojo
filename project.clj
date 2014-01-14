@@ -5,7 +5,7 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :main dojo.core
-  
+
   :dependencies [[org.clojure/clojure "1.5.1"]
 
                  [compojure "1.1.6"]
@@ -15,7 +15,9 @@
 
                  [org.clojure/clojurescript "0.0-2138"]
                  [org.clojure/tools.reader "0.8.3"]
-                 [om "0.1.5"]]
+                 [om "0.1.5"]
+
+                 [org.python/jython "2.7-b1"]]
 
   :plugins [[lein-pdo "0.1.1"]
             [lein-cljsbuild "1.0.1"]
@@ -30,7 +32,7 @@
 
   :resource-paths ["resources" "target/resources"]
 
-  :cljsbuild { 
+  :cljsbuild {
     :builds [{:id "dev"
               :source-paths ["src/cljs"]
               :compiler {
@@ -46,7 +48,4 @@
                 :optimizations :advanced
                 :pretty-print false
                 :preamble ["react/react.min.js"]
-                :externs ["react/externs/react.js"]}}
-                ]}
-
-)
+                :externs ["react/externs/react.js"]}}]})

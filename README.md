@@ -2,6 +2,11 @@
 
 A project skeleton to show off Clojurescript, React, Om and Chord
 
+This copy modified to become a Python interpreter:
+
+![Screen grab](https://raw2.github.com/cassiel/201401ldncljdojo/master/splash.jpg)
+
+
 ### Suggested reading
 
 There are quite a few concepts within this project, in order to understand what is going on I would suggest looking at the following
